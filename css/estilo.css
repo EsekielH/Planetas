@@ -1,0 +1,421 @@
+body, html{
+     height: 100%;
+     margin:0;
+     padding:0;
+}
+body{
+     text-align: center;
+     color: white;
+     font-family: sans-serif;
+     background: -webkit-radial-gradient(
+                  #2d5772,
+                  #2d5772,
+                  #132430
+                  );
+     background-attachment: fixed;
+     
+}
+div{
+     display: block;
+}
+h1{
+     text align:center;
+     font-family: Arial;
+     font-size: 40px;
+     position: relative;
+     top:-1400px;
+}
+p {
+     
+     display: inline-block;
+     position: relative;
+     left: -20%;
+     top:-1400px;
+     width: 50%; 
+     border: 5px rgb(33, 226, 194) double;
+     border-radius: 6%;
+     background: #132430;
+     text-align: justify;
+     padding: 10px;
+     font-size: 25px;
+ 
+}
+h2 {
+     font-family: Verdana;
+     position:relative;
+     left:-20% ;
+     top: -1400px;
+     border: 10px rgb(19, 36, 48);
+}
+
+span{
+     position: relative;
+     top: 120px;
+     left:-400px;
+     font-size: 30px;
+}     
+.nubes{
+     width: 220px 220px;
+     
+
+     position: absolute;
+     top:30px;
+     right:0;
+     bottom:0;
+     left: 0;
+     margin: auto;
+}
+.nubes img {
+     position: relative;
+     z-index: 20;
+}
+.mapa {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/mapa.png);
+     background-size: cover;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+
+.estrella{
+     width: 0x;
+     height: 0px;
+     background: white;
+     position: fixed;
+     border radius: 50%;
+}
+.uno{
+     top: 30%;
+     left: 50%;
+}
+.dos{
+     top:30%;
+     left:30%;
+}
+.tres{
+     top: 90%;
+     left: 90%;
+}
+.cuatro{
+     top:80%;
+     left:20%;
+}
+.cinco{
+     top: 30%;
+     left: 80%;
+}
+.seis{
+     top: 70%;
+     left: 80%;
+}
+.siete{
+     top: 20%;
+     left: 60%;
+}
+.ocho{
+     top: 80%;
+     left:50%;
+}
+.nueve{
+     top:35%;
+     left: 10%;
+}
+.diez{
+     top:60%;
+     left:20%;
+}
+.estrella:nth-child(2n){
+     -webkit-animation: estrella-par 2s infinite;
+}
+@-webkit-keyframes estrella-par{
+     0%, 90%{
+      box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+     }
+     100%{
+      box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+     }
+}
+.estrella:nth-child(3n){
+     -webkit-animation: estrella-impar 2s infinite;
+}
+@-webkit-keyframes estrella-impar{
+     0%, 35%, 50%{
+      box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+     }
+      45%{
+      box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+     }
+}
+.mercurio {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/mercurio.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 870px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.venus {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/venus.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 970px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.luna {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/luna.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 1070px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.marte {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/marte.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 1260px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.jupiter {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/jupiter.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 1370px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.saturno {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/saturno.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 1470px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.anillo {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     background: url(../imagenes/anillo.png);
+     background-size: cover;
+     position: relative;
+     left: 65%;
+     top: 1370px;
+     height: 20px;
+     width: 300px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 7s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.urano {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/urano.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 1520px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.neptuno {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/neptuno.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 1620px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
+.pluton {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     box-shadow: -40px -30px 0 0 rgba(0,0,0,.1)inset,
+                 -70px -40px 0 0 rgba(0,0,0,.1)inset,
+                  5px   5px  0 0  rgba(255,255,255,.2)inset;
+     background: url(../imagenes/pluton.png);
+     background-size: cover;
+     position: relative;
+     left: 70%;
+     top: 1800px;
+     margin: 0px;
+     padding: 0px;
+
+     -webkit-animation: Sitio 5s infinite linear;
+}
+@-webkit-keyframes Sitio  {
+     from {
+          background-position: left center;
+     }
+
+     to {
+          background-position: -396px center;
+     }
+}
